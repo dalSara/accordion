@@ -14,10 +14,7 @@ const App = () => {
      */
   return (
     <div>
-      <h2>Example of Single-Page Application Components with React</h2>
-      
-      
-      
+      <Text text={"Her is some text, debating a very interesting topic"} />
     </div>
   );
 };
