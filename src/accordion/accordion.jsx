@@ -28,6 +28,7 @@ function Accordion({ heading, infoText }) {
         >
           +
         </span>
+        {/*Optimal here would of course be to use an svg as an icon, but I dident have a svg so the + had to do.*/}
       </button>
       <Collapse isOpened={isExpanded}>
         <Text className="accordion__text" text={infoText}></Text>

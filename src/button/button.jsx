@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./button.css";
 
 const onClick = () => {
-  //a click funtion!
+  //click funtion here!
 };
 
 function Button({ href, isLoading, text }) {
