@@ -1,0 +1,9 @@
+.heading__container {
+  border-bottom: 1px solid #292928;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+}

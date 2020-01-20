@@ -1,27 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Text } from "./text/text.jsx";
+import Button from "./button/button.jsx";
+import Heading from "./heading/heading.jsx";
+import Accordions from "./accordions/accordions.jsx";
+import content from "../mock-data/content.json";
 
 const App = () => {
-  /*
-        Note that the following is neither a "" string, nor regular JS: it is JSX syntax.
-        Furthermore, it should be only a single tag with children (if any).
-        If you want several tags at the same level (ie siblings), you need to put
-        them inside a <div> for example.
-        If you remove the <div> and have the <h2> and <Container> one after the
-        other, you will get an error.
-     */
   return (
-    <div>
-      <Text text={"Her is some text, debating a very interesting topic"} />
+    <div className="container">
+      <Heading heading={content.heading}></Heading>
+      <Accordions facts={content.facts} />
+      <Button text={content.button.text} href={content.button.href}></Button>
     </div>
   );
 };
 
-/*
-    This is where we bind our generated HTML via React to the .html file.
-    Changes in the state of the React Components will automatically trigger
-    the re-rendering of the HTML.
- */
 ReactDOM.render(<App />, document.getElementById("root"));

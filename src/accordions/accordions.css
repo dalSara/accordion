@@ -1,0 +1,10 @@
+.accordions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.accordions__item {
+  margin-bottom: 1rem;
+}
